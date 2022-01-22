@@ -1,11 +1,11 @@
 
   .item{
-      color:rgb(154, 107, 216);
+      color:rgb(173, 119, 245);
   }
   .item img{
     
-    height: 50px;
+    max-height: 50px;
     border-radius: 30px;
-    max-width: 50px;
+    width: 50px;
   }
   
