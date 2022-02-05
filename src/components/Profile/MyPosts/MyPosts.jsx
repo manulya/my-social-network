@@ -2,31 +2,30 @@ import React from "react";
 import s from "./MyPosts.module.css";
 import Post from "./Post/Post";
 
-let postData = [
-  { id: 1, Like: 10, Dislike: 1, post: "go little rock star" },
-  { id: 2, Like: 25, Dislike: 3, post: "you are the best" },
-];
+const MyPosts = (props) => {
+  let postsElements = props.posts.map(p=><Post 
+  message={p.message}
+  likesCount={p.likesCount}
+  dislikesCount={p.dislikesCount}
+/>);
 
-const MyPosts = () => {
-  return (
+let newPostElement = React.createRef();
+let addPost=()=>{
+let text=newPostElement.current.value;
+props.addPost(text);
+text=newPostElement.current.value='';
+}
+
+return (
     <div className={s.postsBlock}>
       <h3>My posts</h3>
-      <textarea></textarea>
+      <textarea ref={newPostElement}></textarea>
       <div>
-        <button>Add Post</button>
+        <button onClick={addPost}>Add Post</button>
         <button>Remove</button>
       </div>
       <div className={s.posts}>
-        <Post
-          message={postData[0].post}
-          LikeCount={postData[0].Like}
-          DislikeCount={postData[0].Dislike}
-        />
-        <Post
-          message={postData[1].post}
-          LikeCount={postData[1].Like}
-          DislikeCount={postData[1].Dislike}
-        />
+      {postsElements}
       </div>
     </div>
   );

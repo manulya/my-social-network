@@ -1,3 +1,7 @@
 .descriptonInfo{
     padding: 10px;
 }
+.profileInfo img{
+    height: 250px;
+    width: 500px;
+}

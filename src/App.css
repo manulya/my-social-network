@@ -6,10 +6,9 @@
   grid-template-areas:
     "h h"
     "n c";
-
+    font-family: serif;
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
-  /*grid-gap: 10px;*/
 }
 .app-wrapper-content{
   
@@ -17,3 +16,4 @@
     background-color: rgba(252, 38, 206, 0.247);
   
 }
+
