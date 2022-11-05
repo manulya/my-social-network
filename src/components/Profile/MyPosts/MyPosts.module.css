@@ -1,6 +1,34 @@
 .postsBlock{
 padding: 5px;
+color:#C1D7F0;
+width: auto;
 }
 .posts{
     margin-top: 10px;
 }
+.postText{
+    background-color: #1E1C22;
+    border-color: rgb(118, 118, 118);
+    border-radius: 5px;
+    border-width: 2px;
+    min-width: 250px;
+    height: 40px;
+    resize: none;
+       
+}
+.buttons{
+    padding: 3px 10px;
+    border-width: 3px;
+    background-color: #ab79d6;
+    border-color: #ab79d6;
+    border-radius: 5px;
+    border-style:solid;
+    color: #27272c;
+    margin: 4px;
+    transition-property: color, background-color;
+}
+.buttons:hover {
+    background-color: #27272c;
+    color: #ab79d6;
+}
+

@@ -2,14 +2,36 @@
 display: grid;
 grid-template-columns: 2fr 10fr;
 margin-left: 10px;
+  
 }
 .dialog{
 padding: 10px;
 
+
 }
 .dialogs li{
     list-style-type: none;
-    
+     /*gradient-border*/
+   --color-primary: #ab79d6;
+   --color-on-primary: #351d4a;
+   --color-secondary: #d367c1;
+   --color-background: #27272c;
+   --color-on-background: #c5c5ce;
+   --color-background-alt: #1e1c22;
+   --color-background-alt-alpha: rgba(30,28,34,.75);
+   --color-inverse: #fff;
+   --color-gray: #8e8e8e;
+   --color-yellow: #dedf40;
+   --color-green: #62cb5c;
+   --color-blue: #00bbcb;
+   --color-on-blue: #004a09;
+   --gradient: var(--color-secondary) 10%,var(--color-yellow) 25%,var(--color-green) 50%,var(--color-blue) 75%,var(--color-primary) 90%;
+   --gradient-angle: 35deg;
+   -o-border-image: linear-gradient(var(--gradient-angle,to bottom),var(--gradient)) 1;
+   border-image: linear-gradient(var(--gradient-angle,to bottom),var(--gradient)) 1;
+   border-style: solid;
+   border-width: 4px;
+   padding:10px 10px 15px 10px;
 }
 
     
@@ -24,31 +46,47 @@ padding: 10px;
 }
 
 .dialogItem a{
-color:rgb(136, 55, 23); 
+color:rgb(253, 201, 184); 
 text-decoration: none;
-
-
 }
-.messages{
+.dialogItem a.active{
+color:rgb(160, 230, 236); 
+    text-shadow: 0 0 5px rgb(171, 206, 246),0 0 10px rgb(34, 53, 197),0 0 15px red,0 0 20px red;
+}
+    .messages{
     margin-top: 10px;
-    color: rgb(255, 81, 0);
+    color: #C1D7F0;
     grid-column-start: 2;
 }
 
 .sendText {
 margin-left: 10px;
+display: flex;
+align-items: flex-end;
 
 }
-.sendText button{
-    position: relative;
-    bottom: 14px;
-    width: 50px;
-    height: 35px;
-    margin-left: 10px;
-    color: rgb(95, 8, 138);
-    background-color: rgb(219, 100, 209);
-    font-weight: bold;   
+.buttons{
+    padding: 3px 10px;
+    border-width: 3px;
+    background-color: #ab79d6;
+    border-color: #ab79d6;
+    border-radius: 5px;
+    border-style:solid;
+    color: #27272c;
+    margin: 10px;
+    transition-property: color, background-color;
 }
-.sendText textarea{
-    background-color: rgba(202, 202, 240, 0.479);
+.buttons:hover {
+    background-color: #27272c;
+    color: #ab79d6;
+}
+
+.textMessage{
+    background-color: #1E1C22;
+    border-color: rgb(118, 118, 118);
+    border-radius: 5px;
+    border-width: 2px;
+    min-width: 250px;
+    height: 40px;
+    resize: none;
 }

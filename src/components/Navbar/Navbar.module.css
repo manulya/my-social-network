@@ -1,12 +1,24 @@
 .nav {
     grid-area: n;
-    background-color: rgb(227, 87, 255);
+    background: rgb(101,0,107);
+    background: linear-gradient(124deg, rgba(101,0,107,0.6638176638176638) 0%, rgba(205,50,204,0.8803418803418803) 32%, rgba(0,212,255,0.5826210826210827) 100%);
     padding: 25px;
+    text-align: center;
   }
   .item a{
       color:rgb(253, 201, 184);
       text-decoration: none;
+      background-color: #080757; 
+  border-radius: 10px;
+  padding:10px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 7px;
+width: 60px;
+height: 20px;
   }
   .item a.active{
-    color:rgb(255, 233, 227); 
+    color:rgb(160, 230, 236); 
+    text-shadow: 0 0 5px rgb(171, 206, 246),0 0 10px rgb(34, 53, 197),0 0 15px red,0 0 20px red;
   }
