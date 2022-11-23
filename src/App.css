@@ -2,11 +2,10 @@
   margin: 0 auto;
   display: grid;
   width: 1200px;
-
   grid-template-areas:
     "h h"
     "n c";
-    font-family: serif;
+    font-family: "Kanit" ,serif;
   grid-template-rows: 60px 1fr;
   grid-template-columns: 2fr 10fr;
 }

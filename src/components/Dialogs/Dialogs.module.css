@@ -10,6 +10,7 @@ padding: 10px;
 
 }
 .dialogs li{
+    margin-top: 10px;
     list-style-type: none;
      /*gradient-border*/
    --color-primary: #ab79d6;
@@ -31,7 +32,7 @@ padding: 10px;
    border-image: linear-gradient(var(--gradient-angle,to bottom),var(--gradient)) 1;
    border-style: solid;
    border-width: 4px;
-   padding:10px 10px 15px 10px;
+   padding:5px 10px 15px 10px;
 }
 
     
@@ -40,7 +41,7 @@ padding: 10px;
     height: 20px;
     border-radius: 30px; 
     margin-left: 5px;
-    top: 5px;
+    top: 10px;
     position: relative;
     margin-top: 5px;
 }
@@ -89,4 +90,5 @@ align-items: flex-end;
     min-width: 250px;
     height: 40px;
     resize: none;
+    color: #C1D7F0;
 }
