@@ -3,9 +3,16 @@ padding: 5px;
 color:#C1D7F0;
 width: auto;
 }
+
 .posts{
     margin-top: 10px;
 }
+
+.myposts{
+    margin-left: 20px;
+    font-size: 25px;
+}
+
 .postText{
     background-color: #1E1C22;
     border-color: rgb(118, 118, 118);
@@ -15,6 +22,7 @@ width: auto;
     height: 40px;
     resize: none;
     color: #C1D7F0;
+    margin-left: 20px;
 }
 .buttons{
     padding: 3px 10px;
@@ -24,8 +32,10 @@ width: auto;
     border-radius: 5px;
     border-style:solid;
     color: #27272c;
-    margin: 4px;
+    
     transition-property: color, background-color;
+    margin-top: 5px;
+    margin-left: 20px;
 }
 .buttons:hover {
     background-color: #27272c;

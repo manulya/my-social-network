@@ -8,6 +8,7 @@ const MyPosts = (props) => {
   let postsElements = 
   props.posts.map((p) => (
     <Post
+      img={p.img}
       message={p.message}
       likesCount={p.likesCount}
       dislikesCount={p.dislikesCount}
@@ -28,7 +29,7 @@ const MyPosts = (props) => {
 
   return (
     <div className={s.postsBlock}>
-      <h3>My posts</h3>
+      <h3 className={s.myposts}>My posts</h3>
       <textarea className={s.postText}
         onChange={onPostChange}
         placeholder="Enter your post"
