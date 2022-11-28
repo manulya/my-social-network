@@ -12,11 +12,11 @@ return {
 
 let mapDispatchToProps =(dispatch)=>{
   return {
-    updateNewMessageBody:()=>{
-      dispatch(sendMessageСreator());
+    updateNewMessageBody:(body)=>{
+      dispatch(updateNewMessageBodyCreator(body));
     },
-    sendMessage:(body)=>{ 
-     dispatch(updateNewMessageBodyCreator(body));
+    sendMessage:()=>{ 
+      dispatch(sendMessageСreator());
     }
 
   }
