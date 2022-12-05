@@ -1,7 +1,47 @@
 img{
     width: 40px;
     height: 40px;
+    padding-left: 15px;
 }
 .userStyle{
     color:#C1D7F0;
+    border: 2px solid #C1D7F0;
+    width:fit-content;
+    height: auto;
+    margin: 40px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns:100px 200px 100px;
+    border-radius: 20px;
+}
+.location{
+    grid-column-start: 3;
+    grid-column-end: 3;
+}
+.persone{
+    grid-column-start: 1;
+    grid-column-end: 1;
+}
+.about{
+    grid-column-start: 2;
+    grid-column-end: 2; 
+    margin-bottom: 20px;
+}
+.status{
+    margin-top: 20px;
+}
+button{
+    width:70px;
+    padding: 2px 5px;
+    border-width: 3px;
+    background-color: #ab79d6;
+    border-color: #ab79d6;
+    border-radius: 5px;
+    border-style:solid;
+    color: #27272c;
+    transition-property: color, background-color;
+    }
+button:hover {
+    background-color: #27272c;
+    color: #ab79d6;
 }
