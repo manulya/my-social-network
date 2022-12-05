@@ -45,3 +45,13 @@ button:hover {
     background-color: #27272c;
     color: #ab79d6;
 }
+.selectedPage{
+    font-weight: bold;
+    }
+.page{
+    color:#C1D7F0;
+    cursor: pointer;
+    
+    padding-left: 10px;
+    
+}
